@@ -17,13 +17,13 @@ typedef struct type
 	int (*f)();
 } spec_type;
 
-int parser(const char *format, st[], va_list p);
+int _parse(const char *format, spec_type st[], va_list p);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list);
 int print_str(va_list);
 int print_percentage(void);
-int print_dec(va_list ap);
-int print_int(va_list ap)
+int print_dec(va_list);
+int print_int(va_list);
 
 #endif

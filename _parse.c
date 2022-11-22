@@ -22,10 +22,10 @@ int _parse(const char *format, spec_type st[], va_list ap)
 				if (format[i + 1] == st[j].s[0])
 				{
 					val = st[j].f(ap);
-					if (val == -)
+					if (val == -1)
 						return (-1);
 					chars_to_print += val;
-					break
+					break;
 				}
 				j++;
 			}
@@ -35,7 +35,7 @@ int _parse(const char *format, spec_type st[], va_list ap)
 				{
 					_putchar(format[i]);
 					_putchar(format[i + 1]);
-					chars_to_print = printed characters + 2
+					chars_to_print = chars_to_print + 2;
 				}
 				else
 					return (-1);
@@ -45,7 +45,7 @@ int _parse(const char *format, spec_type st[], va_list ap)
 		else
 		{
 			_putchar(format[i]);
-			chars_to_print++
+			chars_to_print++;
 		}
 		i++;
 	}

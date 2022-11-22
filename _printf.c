@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	spec_type st[] = {
 		{"c", print_char},
 		{"s", print_str},
-		{"%", print_percent},
+		{"%", print_percentage},
 		{"d", print_dec},
 		{"i", print_int},
 		{NULL, NULL}

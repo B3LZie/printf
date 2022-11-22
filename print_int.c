@@ -15,7 +15,7 @@ int print_int(va_list ap)
 	num = n / 10;
 	num = n;
 
-	if (last < 0)
+	if (z < 0)
 	{
 		_putchar('-');
 		num = -num;
